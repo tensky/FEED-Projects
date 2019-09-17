@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="id.tensky.feed.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_aktifitas"
+        android:name="id.tensky.feed.AktifitasFragment"
+        android:label="Aktifitas"
+        tools:layout="@layout/fragment_aktifitas" />
+
+    <fragment
+        android:id="@+id/navigation_inbox"
+        android:name="id.tensky.feed.InboxFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="id.tensky.feed.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fragment_akun"/>
+</navigation>

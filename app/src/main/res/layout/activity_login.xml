@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_green"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="64dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:id="@+id/login_noHP_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_account_white" />
+
+        <EditText
+            android:id="@+id/login_noHP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="#FFFFFF"
+            android:drawablePadding="16dp"
+            android:hint="No. HP"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_noHP_layout">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_lock_white" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:backgroundTint="#FFFFFF"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sp_green_rounded_30dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:text="Log in"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_password_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
