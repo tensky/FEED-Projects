@@ -12,5 +12,7 @@ class IntroActivity : AppCompatActivity() {
         supportActionBar?.hide()
         val loginIntent = Intent(this, LoginActivity::class.java)
         Handler().postDelayed({startActivity(loginIntent)}, 2000)
+
+
     }
 }

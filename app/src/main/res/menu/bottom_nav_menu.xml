@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_home"
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_aktifitas"
-        android:icon="@drawable/ic_aktifitas"
-        android:title="Aktifitas" />
+        android:id="@+id/navigation_aktivitas"
+        android:icon="@drawable/ic_aktivitas"
+        android:title="Aktivitas" />
 
     <item
         android:id="@+id/navigation_inbox"

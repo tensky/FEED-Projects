@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_aktifitas"
-        android:name="id.tensky.feed.AktifitasFragment"
-        android:label="Aktifitas"
-        tools:layout="@layout/fragment_aktifitas" />
+        android:id="@+id/navigation_aktivitas"
+        android:name="id.tensky.feed.AktivitasFragment"
+        android:label="Aktivitas"
+        tools:layout="@layout/fragment_aktivitas" />
 
     <fragment
         android:id="@+id/navigation_inbox"
