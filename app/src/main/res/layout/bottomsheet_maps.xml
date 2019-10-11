@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_peekHeight = "24dp"
+    app:behavior_hideable = "false"
+    android:background="@drawable/bg_white_rounded_32dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/bottom_maps_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mau berbagi bersama dimana hari ini?"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_grey_edge_rectangle"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Cari lokas titik kumpul berbagi"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_map"
+        android:drawablePadding="16dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Pilih lewat peta"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+</LinearLayout>

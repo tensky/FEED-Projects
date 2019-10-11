@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <include
+        android:id="@+id/share_bottomsheet_maps"
+        layout="@layout/bottomsheet_maps"/>
+
+    <ImageView
+        android:id="@+id/share_locationpin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/ic_location"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <FrameLayout
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/share_placholder"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

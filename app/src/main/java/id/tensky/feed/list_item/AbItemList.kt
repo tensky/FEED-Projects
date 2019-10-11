@@ -1,9 +1,3 @@
 package id.tensky.feed.list_item
 
-class AbItemList {
-    internal lateinit var title : String
-    internal lateinit var jarak : String
-    internal lateinit var jalan : String
-    internal lateinit var linkFoto : String
-
-}
+class AbItemList(val title : String, val jarak : String, val jalan : String, val linkFoto : String)
