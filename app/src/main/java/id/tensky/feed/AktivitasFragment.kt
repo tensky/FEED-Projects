@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_aktivitas.view.*
 class AktivitasFragment : Fragment() {
 
     var abItemLists : List<AbItemList> = ArrayList()
-    var abRecyclerAdapter = context?.let { AbRecyclerAdapter(it, abItemLists) }
+    var abRecyclerAdapter = context?.let { AbRecyclerAdapter(it, abItemLists, activity?.supportFragmentManager!!.beginTransaction(), true) }
 
     override fun onCreateView(
         inflater: LayoutInflater,

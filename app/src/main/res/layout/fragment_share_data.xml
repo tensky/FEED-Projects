@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/share_data_backButton"
+            android:id="@+id/map_backButton"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginTop="16dp"
@@ -29,10 +29,10 @@
             android:layout_height="wrap_content"
             android:text="Bagikan Makanan"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/share_data_backButton"
+            app:layout_constraintBottom_toBottomOf="@+id/map_backButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/share_data_backButton" />
+            app:layout_constraintTop_toTopOf="@+id/map_backButton" />
 
 
         <ImageView
@@ -55,7 +55,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/share_data_lokasiIkon"
-            app:layout_constraintTop_toBottomOf="@id/share_data_backButton">
+            app:layout_constraintTop_toBottomOf="@id/map_backButton">
 
             <TextView
                 android:id="@+id/textView5"
@@ -86,6 +86,7 @@
             app:layout_constraintTop_toBottomOf="@+id/share_data_lokasiIkon">
 
             <TextView
+                android:id="@+id/share_data_namaText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Upload foto makanan" />
@@ -108,6 +109,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/share_data_namaText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -168,7 +170,7 @@
                 android:lines="4" />
 
             <Button
-                android:id="@+id/share_bagikan_button"
+                android:id="@+id/share_data_bagikan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"

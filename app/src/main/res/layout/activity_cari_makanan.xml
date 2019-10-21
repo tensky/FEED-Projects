@@ -57,6 +57,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false"
         app:layout_constraintTop_toBottomOf="@+id/cari_makanan_pilihpeta" />
+
+    <FrameLayout
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cari_makanan_placholder"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

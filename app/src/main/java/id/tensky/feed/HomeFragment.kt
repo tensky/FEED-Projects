@@ -33,6 +33,11 @@ class HomeFragment : Fragment() {
             startActivity(cariMakananIntent)
         }
 
+        root.home_beribantuanButton.setOnClickListener {
+            val beriBantuanIntent = Intent(context, BeriBantuanActivity::class.java)
+            startActivity(beriBantuanIntent)
+        }
+
         return root
     }
 }

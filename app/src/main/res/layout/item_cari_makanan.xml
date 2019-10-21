@@ -2,13 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/carimakan_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_grey_edge_rectangle"
+    android:elevation="2dp"
     android:paddingStart="24dp"
     android:paddingTop="16dp"
     android:paddingEnd="24dp"
-    android:paddingBottom="16dp">
+    android:paddingBottom="16dp"
+    android:translationZ="2dp">
 
 
     <TextView
@@ -18,7 +22,7 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Panti Asuh Hanan" />
+        tools:text="Ayam Goreng" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -56,6 +60,7 @@
         android:id="@+id/carimakan_item_foto"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toTopOf="@+id/carimakan_item_waktu"

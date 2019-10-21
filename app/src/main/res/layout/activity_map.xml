@@ -12,11 +12,11 @@
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
     <include
-        android:id="@+id/map_bottomsheet_maps"
+        android:id="@+id/map_bottomsheet_ambil"
         layout="@layout/bottomsheet_ambil"/>
 
     <ImageButton
-        android:id="@+id/share_data_backButton"
+        android:id="@+id/map_backButton"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"

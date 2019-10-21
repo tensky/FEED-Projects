@@ -9,7 +9,7 @@
     android:paddingStart="24dp"
     android:paddingTop="16dp"
     android:paddingEnd="24dp"
-    app:behavior_Hideable="false"
+    app:behavior_hideable="false"
     app:behavior_peekHeight="32dp"
     app:layout_behavior="@string/bottom_sheet_behavior">
 

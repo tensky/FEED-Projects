@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:padding="24dp"
     tools:context=".CariMakananDetailFragment">
 
@@ -117,6 +118,7 @@
             app:layout_constraintTop_toBottomOf="@id/imageView4" />
 
         <TextView
+            android:id="@+id/makanan_detail_waktu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="14/12/2019, 11:11"

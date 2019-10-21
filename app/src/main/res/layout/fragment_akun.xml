@@ -79,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
-        tools:text="Hanan Hanaqi"
+        android:text="Hanan Hanaqi"
         android:textSize="24sp"/>
 
     <TextView
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="4dp"
         android:layout_marginStart="24dp"
-        tools:text="hananhanaqi@gmaildotkom"
+        android:text="hananhanaqi@gmaildotkom"
         android:textSize="14sp"/>
 
     <TextView
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="4dp"
         android:layout_marginStart="24dp"
-        tools:text="+6286913692469"
+        android:text="+6286913692469"
         android:textSize="14sp"/>
 
     <Button
