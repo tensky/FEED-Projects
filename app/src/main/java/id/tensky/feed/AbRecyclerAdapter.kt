@@ -15,7 +15,13 @@ class AbRecyclerAdapter(private var context: Context, private var abItemLists: L
     RecyclerView.Adapter<AbRecyclerAdapter.AbViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AbViewHolder {
-        return AbViewHolder(LayoutInflater.from(context).inflate(R.layout.item_aktiv_bantuan_list, parent, false))
+        return AbViewHolder(
+            LayoutInflater.from(context).inflate(
+                R.layout.item_aktiv_bantuan_list,
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
@@ -37,7 +43,16 @@ class AbRecyclerAdapter(private var context: Context, private var abItemLists: L
         }
 
         holder.layout.setOnClickListener{
-            val beriBantuanDetailFragment = BeriBantuanDetailFragment(item.namaPengirim, item.title, item.desc, item.jalan, item.jarak, linkFoto, item.latitude, item.longitude )
+            val beriBantuanDetailFragment = BeriBantuanDetailFragment(
+                item.namaPengirim,
+                item.title,
+                item.desc,
+                item.jalan,
+                item.jarak,
+                linkFoto,
+                item.latitude,
+                item.longitude
+            )
             ft.add(R.id.beri_bantuan_placholder,beriBantuanDetailFragment)
             ft.commit()
         }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
+import id.tensky.feed.adapters.CariMakananRecyclerAdapter
 import id.tensky.feed.list_item.CariMakananItemList
 import kotlinx.android.synthetic.main.activity_cari_makanan.*
 
@@ -16,7 +17,11 @@ class CariMakananActivity : AppCompatActivity() {
         cari_makanan_recyclerView.layoutManager = LinearLayoutManager(this)
 
         val cariMakananList = ArrayList<CariMakananItemList>()
-        val cariMakananRecyclerAdapter = CariMakananRecyclerAdapter(this, cariMakananList, supportFragmentManager.beginTransaction())
+        val cariMakananRecyclerAdapter = CariMakananRecyclerAdapter(
+            this,
+            cariMakananList,
+            supportFragmentManager.beginTransaction()
+        )
         cari_makanan_recyclerView.adapter = cariMakananRecyclerAdapter
 
         supportActionBar?.hide()

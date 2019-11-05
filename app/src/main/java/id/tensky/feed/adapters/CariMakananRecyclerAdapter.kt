@@ -1,4 +1,4 @@
-package id.tensky.feed
+package id.tensky.feed.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
+import id.tensky.feed.CariMakananDetailFragment
+import id.tensky.feed.R
 import id.tensky.feed.list_item.CariMakananItemList
 import kotlinx.android.synthetic.main.item_cari_makanan.view.*
 
@@ -15,7 +17,13 @@ class CariMakananRecyclerAdapter(private val context : Context, private val list
     RecyclerView.Adapter<CariMakananRecyclerAdapter.CariMakananViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CariMakananViewHolder {
-        return CariMakananViewHolder(LayoutInflater.from(context).inflate(R.layout.item_cari_makanan, parent, false))
+        return CariMakananViewHolder(
+            LayoutInflater.from(context).inflate(
+                R.layout.item_cari_makanan,
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
@@ -40,7 +48,18 @@ class CariMakananRecyclerAdapter(private val context : Context, private val list
         holder.waktu.text = itemList.waktu
 
         holder.layout.setOnClickListener{
-            val cariMakananDetailFragment = CariMakananDetailFragment(itemList.namaPengirim, itemList.title, itemList.desc, itemList.jalan, itemList.jarak, linkFoto, itemList.waktu, itemList.jumlah, itemList.latitude, itemList.longitude )
+            val cariMakananDetailFragment = CariMakananDetailFragment(
+                itemList.namaPengirim,
+                itemList.title,
+                itemList.desc,
+                itemList.jalan,
+                itemList.jarak,
+                linkFoto,
+                itemList.waktu,
+                itemList.jumlah,
+                itemList.latitude,
+                itemList.longitude
+            )
             ft.add(R.id.cari_makanan_placholder, cariMakananDetailFragment)
             ft.commit()
         }

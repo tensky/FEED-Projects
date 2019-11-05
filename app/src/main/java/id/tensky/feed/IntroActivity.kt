@@ -10,7 +10,7 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
         supportActionBar?.hide()
-        val loginIntent = Intent(this, LoginActivity::class.java)
+        val loginIntent = Intent(this, IntroPagerActivity::class.java)
         Handler().postDelayed({startActivity(loginIntent)}, 2000)
 
 
