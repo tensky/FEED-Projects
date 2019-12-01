@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
+import id.tensky.feed.adapters.AbRecyclerAdapter
 import id.tensky.feed.list_item.AbItemList
 import kotlinx.android.synthetic.main.activity_beri_bantuan.*
 
@@ -16,12 +17,12 @@ class BeriBantuanActivity : AppCompatActivity() {
         beri_bantuan_recyclerView.layoutManager = LinearLayoutManager(this)
 
         val beriBantuanList = ArrayList<AbItemList>()
-        val beriBantuanRecyclerAdapter = AbRecyclerAdapter(
-            this,
-            beriBantuanList,
-            supportFragmentManager.beginTransaction(),
-            false
-        )
+        val beriBantuanRecyclerAdapter =
+            AbRecyclerAdapter(
+                beriBantuanList,
+                supportFragmentManager.beginTransaction(),
+                false
+            )
 
         beri_bantuan_recyclerView.adapter = beriBantuanRecyclerAdapter
 
