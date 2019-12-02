@@ -18,5 +18,9 @@ class IntroPagerActivity : AppCompatActivity() {
         intro_loginButton.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
         }
+
+        intro_signupButton.setOnClickListener{
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
     }
 }

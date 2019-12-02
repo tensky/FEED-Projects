@@ -19,7 +19,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".IntroPagerActivity"></activity>
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".IntroPagerActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".BeriBantuanActivity" />
         <activity android:name=".CariMakananActivity" />
